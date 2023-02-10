@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u=x testfile
+chmod 764 testfile
