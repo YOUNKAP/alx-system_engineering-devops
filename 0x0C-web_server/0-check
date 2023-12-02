@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+ssh ubuntu@100.25.205.27  -i /home/ubuntu 'ls ~/'
+
+touch some_page2.html
+
+./0-transfer_file some_page2.html 100.25.205.27 ubuntu  ~/.ssh/id_rsa
+
+ssh ubuntu@100.25.205.27  -i /home/ubuntu 'ls ~/'
