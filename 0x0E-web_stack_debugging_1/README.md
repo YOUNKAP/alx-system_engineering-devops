@@ -1,7 +1,6 @@
 # 0x0E. Web stack debugging
 
-### 0. Nginx likes port 80
+## 0. Nginx likes port 80
 
 
-### 1. Make it sweet and short
-
+## 1. Make it sweet and short 
