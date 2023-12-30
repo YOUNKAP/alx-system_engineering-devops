@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains.
+
+
+dig www.ynduplex.tech | grep -A1 'ANSWER SECTION:'
+
+
+dig lb-01.ynduplex.tech  | grep -A1 'ANSWER SECTION:'
+
+
+dig web-01.ynduplex.tech  | grep -A1 'ANSWER SECTION:'
+
+dig web-02.ynduplex.tech  | grep -A1 'ANSWER SECTION:'
+
+./0-world_wide_web ynduplex.tech
+
+./0-world_wide_web holberton.online web-02
