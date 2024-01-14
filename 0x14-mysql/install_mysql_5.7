@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Install mysql 5.7 server on ubuntu 20.04
+
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.12-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
+apt policy mysql-server
+sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
